@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: nginx-chart-repo
+  namespace: default
+spec:
+  interval: 60s
+  url: https://github.com/ys2904/my-flux
+  ref:
+    branch: main
